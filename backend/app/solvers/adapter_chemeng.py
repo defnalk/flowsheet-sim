@@ -14,8 +14,8 @@ from app.models.distillation import McCabeThieleRequest, McCabeThieleResponse
 from app.models.reactor import ReactorRequest, ReactorResponse
 from app.solvers.figure_export import figure_to_base64
 from app.solvers.rate_law_parser import parse_rate_law
-from chemeng.kinetics import batch_reactor, cstr, pfr
-from chemeng.separations import mccabe_thiele
+from chemeng.kinetics.reactor_odes import batch_reactor, cstr, pfr
+from chemeng.separations.mccabe_thiele import mccabe_thiele
 
 matplotlib.use("Agg")
 
